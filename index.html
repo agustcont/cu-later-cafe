@@ -1,10 +1,10 @@
-<!-- CU Later Cafe - Contact Page Wireframe -->
+<!-- CU Later Cafe - Homepage Wireframe -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | CU Later Cafe</title>
+  <title>CU Later Cafe</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
@@ -37,22 +37,35 @@
       color: #214f2f;
       font-weight: bold;
     }
-    .contact-section {
+    .hero {
+      background-color: #ffedd5;
       padding: 2rem;
-      max-width: 600px;
-      margin: 0 auto;
       text-align: center;
     }
-    .contact-section h2 {
+    .hero h2 {
+      margin-top: 0;
       color: #214f2f;
     }
-    .contact-info {
+    .cta-buttons {
       margin-top: 1rem;
-      font-size: 1.1rem;
     }
-    .contact-info a {
-      color: #ff6f00;
+    .cta-buttons a {
       text-decoration: none;
+      background-color: #ff6f00;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      margin: 0 0.5rem;
+      display: inline-block;
+    }
+    .hours-section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hours-section img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
     }
     footer {
       background-color: #214f2f;
@@ -65,25 +78,30 @@
 </head>
 <body>
   <header>
-    <h1>Contact CU Later Cafe</h1>
+    <h1>CU Later Cafe</h1>
   </header>
 
   <nav>
-    <a href="cu_later_homepage_wireframe.html">Home</a>
-    <a href="cu_later_menu_wireframe.html">Menu</a>
-    <a href="https://www.instagram.com/c.u_later_cafe" target="_blank">Instagram</a>
+    <a href="menu.html">Menu</a>
+    <a href="#order">Order</a>
+    <a href="https://www.instagram.com/c.u_later_cafe">Instagram</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="contact-section">
-    <h2>We'd love to hear from you!</h2>
-    <div class="contact-info">
-      <p>📍 Yuma, Arizona — Pickup & Delivery Only</p>
-      <p>📷 DM us on Instagram:<br>
-        <a href="https://www.instagram.com/c.u_later_cafe" target="_blank">@c.u_later_cafe</a>
-      </p>
-      <p>📧 Email: <a href="mailto:culatercafe@gmail.com">culatercafe@gmail.com</a></p>
+  <section class="hero">
+    <h2>Your local pickup & delivery cafe in Yuma ☕</h2>
+    <p>Specialty lattes, lemonades, and matcha made with love.</p>
+    <div class="cta-buttons">
+      <a href="menu.html">View Menu</a>
+      <a href="https://www.instagram.com/c.u_later_cafe" target="_blank">DM to Order (Ordenar)</a>
     </div>
+  </section>
+
+  <section class="hours-section">
+    <h3>This Week's Hours</h3>
+    <!-- Instagram screenshot placeholder -->
+    <img src="/images/hours-placeholder.jpg" alt="Weekly hours posted on Instagram">
+    <p><em>Follow us on Instagram for updates!</em></p>
   </section>
 
   <footer>
