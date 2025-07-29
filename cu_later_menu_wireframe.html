@@ -1,0 +1,153 @@
+<!-- CU Later Cafe - Menu Page Wireframe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CU Later Cafe | Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #fffdf7;
+      color: #2f2f2f;
+    }
+    header {
+      background-color: #214f2f;
+      color: white;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin: 0;
+      color: #ff6f00;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+      padding: 0.75rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #214f2f;
+      font-weight: bold;
+    }
+    .language-toggle {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    .language-toggle button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: #ff6f00;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .menu-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .menu-section h2 {
+      color: #214f2f;
+      border-bottom: 2px solid #ff6f00;
+      padding-bottom: 0.25rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #ffedd5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CU Later Cafe Menu</h1>
+  </header>
+
+  <nav>
+    <a href="cu_later_homepage_wireframe.html">Home</a>
+    <a href="#order">Order</a>
+    <a href="https://www.instagram.com/c.u_later_cafe" target="_blank">Instagram</a>
+    <a href="cu_later_contact_wireframe.html">Contact</a>
+  </nav>
+
+  <div class="language-toggle">
+    <button onclick="showEnglish()">English</button>
+    <button onclick="showSpanish()">Español</button>
+  </div>
+
+  <div class="menu-section" id="english-menu">
+    <h2>The Basics</h2>
+    <table>
+      <tr><th>Drink</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Iced Americano</td><td>$3.50</td><td>$4.00</td><td>$4.50</td></tr>
+      <tr><td>Iced Latte</td><td>$4.00</td><td>$4.50</td><td>$5.00</td></tr>
+    </table>
+
+    <h2>Let’s Have Fun</h2>
+    <table>
+      <tr><th>Drink</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Honey Lavender Latte</td><td>$4.50</td><td>$5.00</td><td>$5.50</td></tr>
+      <tr><td>Brown Sugar Matcha</td><td>$4.75</td><td>$5.25</td><td>$5.75</td></tr>
+    </table>
+
+    <h2>For the Heat</h2>
+    <table>
+      <tr><th>Drink</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Watermelon Lemonade</td><td>$3.75</td><td>$4.25</td><td>$4.75</td></tr>
+      <tr><td>Strawberry Basil Lemonade</td><td>$3.75</td><td>$4.25</td><td>$4.75</td></tr>
+    </table>
+  </div>
+
+  <div class="menu-section" id="spanish-menu" style="display: none;">
+    <h2>Los Básicos</h2>
+    <table>
+      <tr><th>Bebida</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Americano Helado</td><td>$3.50</td><td>$4.00</td><td>$4.50</td></tr>
+      <tr><td>Latte Helado</td><td>$4.00</td><td>$4.50</td><td>$5.00</td></tr>
+    </table>
+
+    <h2>Hay Que Divertirnos</h2>
+    <table>
+      <tr><th>Bebida</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Latte de Lavanda con Miel</td><td>$4.50</td><td>$5.00</td><td>$5.50</td></tr>
+      <tr><td>Matcha con Azúcar Morena</td><td>$4.75</td><td>$5.25</td><td>$5.75</td></tr>
+    </table>
+
+    <h2>Para el Calor</h2>
+    <table>
+      <tr><th>Bebida</th><th>16 oz</th><th>20 oz</th><th>24 oz</th></tr>
+      <tr><td>Limonada de Sandía</td><td>$3.75</td><td>$4.25</td><td>$4.75</td></tr>
+      <tr><td>Limonada de Fresa y Albahaca</td><td>$3.75</td><td>$4.25</td><td>$4.75</td></tr>
+    </table>
+  </div>
+
+  <script>
+    function showEnglish() {
+      document.getElementById('english-menu').style.display = 'block';
+      document.getElementById('spanish-menu').style.display = 'none';
+    }
+    function showSpanish() {
+      document.getElementById('english-menu').style.display = 'none';
+      document.getElementById('spanish-menu').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
